@@ -13,6 +13,9 @@ describe "#rotation" do
 	[0, 1, 0, 0],
 	[0, 1, 1, 1],
 	[0, 0, 0, 0]]
-	rotationDroite(before, 90).should eq(after)
+	
+
+    
+    puts rotate90(before).eql?(after)
   end
 end
