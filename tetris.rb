@@ -1,7 +1,6 @@
 # tetris.rb
 
-def rotateDroite(tab, angle)
-
-    return tab.reverse.transpose
-    
+def rotate90(tab)
+	return tab.reverse.transpose
+ 
 end
