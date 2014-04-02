@@ -1,5 +1,7 @@
 # tetra.rb
 
+
+
 def rotationRight(tab)
     
     return tab.reverse.transpose

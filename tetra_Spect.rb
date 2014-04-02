@@ -1,6 +1,9 @@
 #tetra_Spec.rb
 require './tetra'
 
+
+
+
 describe "#rotation" do
   it "Must rotate 90 right" do 
 	before = [
