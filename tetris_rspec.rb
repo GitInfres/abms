@@ -11,8 +11,7 @@ describe "#game_state" do
         [0, 0, 0, 0],
         [0, 0, 0, 0]]
         
-        puts "is_start : "
-        puts is_start(tab)
+        is_start(tab).should eq(true)
     end
     
     it "is_not_start" do
@@ -22,8 +21,7 @@ describe "#game_state" do
         [0, 0, 1, 0],
         [0, 0, 0, 0]]
         
-        puts "is_not_start : "
-        puts is_not_start(tab)
+        is_not_start(tab).should eq(true)
     end
     
     it "is_end" do
@@ -33,8 +31,7 @@ describe "#game_state" do
         [1, 1, 1, 0],
         [1, 1, 0, 1]]
         
-        puts "is_end : "
-        puts is_end(tab)
+        is_end(tab).should eq(true)
     end
     
     
@@ -46,8 +43,7 @@ describe "#game_state" do
         [0, 0, 0, 0],
         [0, 0, 0, 0]]
         
-        puts "is_not_end : "
-        puts is_not_end(tab)
+        is_not_end(tab).should eq(true)
     end
     
     it "line_to_destroy" do
@@ -57,8 +53,7 @@ describe "#game_state" do
         [1, 1, 1, 1],
         [1, 1, 1, 0]]
         
-        puts "line_to_destroy : "
-        puts line_to_destroy(tab)
+        line_to_destroy(tab).should eq(true)
     end
     
     it "purge_line" do
@@ -74,8 +69,7 @@ describe "#game_state" do
         [0, 0, 0, 0],
         [1, 1, 1, 0]]
         
-        puts "purge_line : "
-        puts purge_line(tab, 2).eql?(after)
+        purge_line(tab, 2).should eq(after)
         
     end
     
